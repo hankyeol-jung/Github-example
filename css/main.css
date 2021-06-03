@@ -9,6 +9,19 @@ a {
     text-decoration: none;
 }
 
+/* FLOAT CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+
 /* BTN */
 .btn {
     height: 34px;
@@ -115,4 +128,9 @@ header .main-menu li a {
 }
 header .main-menu li a:hover {
     color: #4078c0
+}
+header .sign-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
